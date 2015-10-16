@@ -3,7 +3,7 @@ import kareltherobot.*;
 /**
  * Write a description of class MazeWalker here.
  * 
- * @author Brentd Gray
+ * @author Brent Gray
  * @version 2015-10-16-1423
  */
 public class MazeWalker extends Robot implements Directions
