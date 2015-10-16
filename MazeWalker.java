@@ -6,7 +6,7 @@ import kareltherobot.*;
  * @author Brent Gray
  * @version 2015-10-16-1423
  */
-public class MazeWalker extends Robot implements Directions
+public class MazeWalker extends Robot implements Directions, MazeSolver
 {
     /**
      * Constructor for objects of class MazeWalker
@@ -18,7 +18,28 @@ public class MazeWalker extends Robot implements Directions
 
     public void followWallRight()
     {
-        
+        if (!frontIsClear() && rightIsBlocked())
+        {
+            turnLeft();
+        } else if (rightIsBlocked())
+        {
+            
+        }
     }
     
+    public void solveMaze() 
+    {
+    }
+    
+    private boolean rightIsBlocked() {
+         boolean result = true;
+         turnRight();
+         if (frontIsClear()) result = false;
+         turnLeft();
+         return result;
+    }
+    
+    private void turnRight() {
+        turnLeft(); turnLeft(); turnLeft();
+    }
 }
