@@ -3,8 +3,8 @@ import kareltherobot.*;
 /**
  * Write a description of class MazeWalker here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Brentd Gray
+ * @version 2015-10-16-1423
  */
 public class MazeWalker extends Robot implements Directions
 {
