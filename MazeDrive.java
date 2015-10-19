@@ -24,9 +24,10 @@ public class MazeDrive implements Directions
         System.out.println("*********** Should be at (3,2) facing North *********");
         // Sitation 3 should end at (8,8) facing East)
         MazeWalker walk3 = new MazeWalker(7, 7, North, 0);
+        walk3.followWallRight();
         // Sitation 4 should end at (2,8) facing South)
         MazeWalker walk4 = new MazeWalker(2, 7, North, 0);
-        
+        walk4.followWallRight();
 
     }
 }
